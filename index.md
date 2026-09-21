@@ -10,7 +10,7 @@ Sie wird als geschlossener Test für Teilnehmerinnen und Teilnehmer eines Deutsc
 bereitgestellt.
 
 **Verantwortlich im Sinne der DSGVO:** `Dawid Mazurek`
-**Kontakt:** `dmazurek00@gmail.com`
+**Kontakt:** `derdavid@deutsch.quest`
 
 ## Welche Daten verarbeitet werden
 
@@ -109,7 +109,7 @@ exam conversation with an AI examiner and then evaluates the performance. It is 
 closed test to participants of a German course.
 
 **Data controller:** `Dawid Mazurek (Hüller Str. 26, 44866 Bochum, Germany)`
-**Contact:** `dmazurek00@gmail.com`
+**Contact:** `derdavid@deutsch.quest`
 
 ## What data is processed
 
