@@ -9,8 +9,8 @@ ein simuliertes Prüfungsgespräch mit einer KI-Prüferin und bewertet die Leist
 Sie wird als geschlossener Test für Teilnehmerinnen und Teilnehmer eines Deutschkurses
 bereitgestellt.
 
-**Verantwortlich im Sinne der DSGVO:** `<Name und Anschrift eintragen>`
-**Kontakt:** `<E-Mail-Adresse eintragen>`
+**Verantwortlich im Sinne der DSGVO:** `Dawid Mazurek`
+**Kontakt:** `dmazurek00@gmail.com`
 
 ## Welche Daten verarbeitet werden
 
@@ -108,8 +108,8 @@ DTB B2 Sprechen is an Android app for practising the German B2 speaking exam. It
 exam conversation with an AI examiner and then evaluates the performance. It is distributed as a
 closed test to participants of a German course.
 
-**Data controller:** `<name and postal address>`
-**Contact:** `<e-mail address>`
+**Data controller:** `Dawid Mazurek (Hüller Str. 26, 44866 Bochum, Germany)`
+**Contact:** `dmazurek00@gmail.com`
 
 ## What data is processed
 
