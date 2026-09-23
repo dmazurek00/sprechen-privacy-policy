@@ -1,6 +1,6 @@
 # Datenschutzerklärung – DTB B2 Sprechen
 
-**Stand:** 2026-09-19
+**Stand:** 2026-09-23
 
 ## Überblick
 
@@ -18,6 +18,8 @@ bereitgestellt.
   Umgebungsgeräusche können mit aufgenommen werden.
 - **Text des Gesprächs** (Transkript) und die dir gestellten Prüfungsaufgaben.
 - **Bewertungsergebnis** deiner Prüfung.
+- **Problemmeldungen**, die du selbst aus der App schickst („Problem mit diesem Gespräch melden"):
+  der gewählte Grund, dein optionaler Text und die Nummer der Sitzung.
 - **Technische Protokolldaten der Sitzung** zur Fehlersuche: Verbindungsqualität, Unterbrechungen,
   Gerätemodell, Android- und App-Version.
 - **Zugangsdaten zu deinem Kursprofil**: Adresse des Profils, Benutzername und Passwort.
@@ -32,7 +34,7 @@ die Schlüssel ein und leitet weiter:
 
 | Empfänger | Was er erhält | Wozu |
 |---|---|---|
-| Kursserver (`sprechen.deutsch.quest`) | Tonaufnahme, Transkript, Ergebnis, Protokolldaten | Speicherung, Auswertung, Anzeige des Ergebnisses |
+| Kursserver (`sprechen.deutsch.quest` für Testzugänge, `roxy.deutsch.quest`) | Tonaufnahme, Transkript, Ergebnis, Protokolldaten, Zugangsname | Speicherung, Auswertung, Anzeige des Ergebnisses |
 | Google (Gemini) | Ton des laufenden Gesprächs; danach die Tonaufnahme | Gespräch mit der Prüferin; neues Transkript und Bewertung der Aussprache |
 | Anthropic (Claude) | **ausschließlich Text** — Transkript und Prüfungsaufgaben | Erstellen der Aufgaben, sprachliche und inhaltliche Bewertung |
 
@@ -41,7 +43,7 @@ die Schlüssel ein und leitet weiter:
 ## Einwilligung und Rechtsgrundlage
 
 Die Aufnahme und ihre Verarbeitung erfolgen nur mit deiner ausdrücklichen Einwilligung
-(Art. 6 Abs. 1 lit. a DSGVO), die du vor jedem Gespräch auf dem Startbildschirm erteilst.
+(Art. 6 Abs. 1 lit. a DSGVO), die du vor jedem Gespräch auf dem Bildschirm „Vorbereitung" erteilst.
 
 Du kannst die Einwilligung dort jederzeit abwählen und sie jederzeit für die Zukunft widerrufen.
 Ohne diese Einwilligung wird keine Tonaufnahme hochgeladen. Das Gespräch selbst läuft weiterhin
@@ -57,9 +59,14 @@ Die Verarbeitung deiner Zugangsdaten stützt sich auf die Durchführung des Kurs
 - **Ton auf dem Server:** wird **7 Tage nach abgeschlossener Auswertung gelöscht**. Konnte eine
   Auswertung nicht abgeschlossen werden, wird die Aufnahme nicht automatisch gelöscht; der
   Kursleiter entfernt sie bei der Bereinigung des Kursprofils, spätestens auf deine Anfrage hin.
-- **Ergebnis und Transkripte:** bleiben in deinem Kursprofil, bis du ihre Löschung verlangst.
+- **Ergebnis und Transkripte:** bleiben in deinem Kursprofil, bis du ihre Löschung verlangst. Auf deine Anfrage
+  löscht der Kursleiter alle Sitzungen, Tonaufnahmen und Ergebnisse deines Zugangs.
+- **Zugangsname:** Bei Testzugängen ist der Benutzername dein Vorname. Er bleibt in der Kontoverwaltung des Kursservers
+  auch nach dem Schließen des Zugangs vermerkt und kann in Sicherungskopien der Kontoverwaltung sowie in automatisch
+  rotierenden Server-Protokollen (ohne Gesprächsinhalte) enthalten sein; auf Anfrage entfernt der Kursleiter auch diese
+  Einträge. Die Daten der Testzugänge sind nicht Teil der nächtlichen Datensicherung des Servers.
 - **Auf deinem Handy:** die letzten zwei Tonaufnahmen und bis zu 30 Gesprächskopien. Die Aufnahmen
-  kannst du jederzeit selbst löschen — auf dem Startbildschirm und direkt nach dem Gespräch auf
+  kannst du jederzeit selbst löschen — unter „Verlauf" und direkt nach dem Gespräch auf
   dem Ergebnisbildschirm. Die Kopie eines Gesprächs wird automatisch gelöscht, sobald das Ergebnis
   auf dem Server gesichert ist.
 - Beim Deinstallieren der App werden alle lokal gespeicherten Daten entfernt.
@@ -75,7 +82,7 @@ Die Verarbeitung deiner Zugangsdaten stützt sich auf die Durchführung des Kurs
 ## Berechtigungen der App
 
 - **Mikrofon** — Aufnahme deiner Antworten während des Gesprächs.
-- **Benachrichtigungen** — Hinweis, dass die Prüfung noch läuft.
+- **Benachrichtigungen** — Hinweis, dass die Prüfung noch läuft, und Nachricht, sobald das Ergebnis fertig ist.
 - **Vordergrunddienst (Mikrofon, Datenabgleich)** — damit das Gespräch bei ausgeschaltetem
   Bildschirm weiterläuft und die Aufnahme danach vollständig übertragen wird.
 - **Internet und Netzwerkstatus** — Verbindung zum Kursserver.
@@ -100,7 +107,7 @@ Kinder unter 13 Jahren bestimmt.
 
 # Privacy Policy – DTB B2 Sprechen (English)
 
-**Last updated:** 2026-09-19
+**Last updated:** 2026-09-23
 
 ## Overview
 
@@ -117,6 +124,8 @@ closed test to participants of a German course.
   be captured as well.
 - **Conversation text** (transcript) and the exam tasks you were given.
 - **Evaluation result.**
+- **Problem reports** you send yourself from the app ("Problem mit diesem Gespräch melden"): the
+  chosen reason, your optional text and the session number.
 - **Technical session logs** for troubleshooting: connection quality, interruptions, device model,
   Android and app version.
 - **Course profile credentials**: profile address, username and password.
@@ -131,7 +140,7 @@ forwards data:
 
 | Recipient | What it receives | Purpose |
 |---|---|---|
-| Course server (`sprechen.deutsch.quest`) | Voice recording, transcript, result, session logs | Storage, evaluation, display of the result |
+| Course server (`sprechen.deutsch.quest` for test accounts, `roxy.deutsch.quest`) | Voice recording, transcript, result, session logs, account name | Storage, evaluation, display of the result |
 | Google (Gemini) | Live audio of the conversation; afterwards the recording | Conversation with the examiner; new transcript and pronunciation assessment |
 | Anthropic (Claude) | **text only** — transcript and exam tasks | Generating tasks, linguistic and content evaluation |
 
@@ -140,7 +149,7 @@ forwards data:
 ## Consent and legal basis
 
 Recording and its processing take place only with your explicit consent (Art. 6(1)(a) GDPR), which
-you give on the start screen before each conversation. You can decline it there at any time and
+you give on the “Vorbereitung” (preparation) screen before each conversation. You can decline it there at any time and
 withdraw it at any time with effect for the future. Without this consent no voice recording is
 uploaded. The conversation itself still runs through the course server and Google (Gemini), and
 only the text recognised live during the conversation is evaluated; that text goes to the course
@@ -154,9 +163,14 @@ Processing of your credentials is based on the performance of the course relatio
 - **Audio on the server:** deleted **7 days after the analysis has been completed**. If an analysis
   could not be completed, the recording is not deleted automatically; the course instructor removes
   it when cleaning up the course profile, and at the latest upon your request.
-- **Result and transcripts:** kept in your course profile until you request deletion.
+- **Result and transcripts:** kept in your course profile until you request deletion. Upon your request the
+  course instructor deletes all sessions, voice recordings and results of your account.
+- **Account name:** for test accounts the user name is your first name. It remains recorded in the course server's
+  account management after the account is closed and may be contained in backup copies of the account management and in
+  automatically rotating server logs (without conversation content); upon request the course instructor removes these
+  entries as well. Data of test accounts is not part of the server's nightly backup.
 - **On your phone:** the last two voice recordings and up to 30 conversation copies. You can delete
-  the recordings yourself at any time — on the start screen and on the result screen right after a
+  the recordings yourself at any time — under “Verlauf” (history) and on the result screen right after a
   conversation. A conversation copy is deleted automatically as soon as the result is stored on the
   server.
 - Uninstalling the app removes all locally stored data.
@@ -172,7 +186,7 @@ Processing of your credentials is based on the performance of the course relatio
 ## Permissions
 
 - **Microphone** — recording your answers during the conversation.
-- **Notifications** — showing that the exam is still running.
+- **Notifications** — showing that the exam is still running and telling you when the result is ready.
 - **Foreground service (microphone, data sync)** — so the conversation continues while the screen is
   off and the recording finishes uploading afterwards.
 - **Internet and network state** — connection to the course server.
