@@ -34,7 +34,7 @@ die Schlüssel ein und leitet weiter:
 
 | Empfänger | Was er erhält | Wozu |
 |---|---|---|
-| Kursserver (`sprechen.deutsch.quest` für Testzugänge, `roxy.deutsch.quest`) | Tonaufnahme, Transkript, Ergebnis, Protokolldaten, Zugangsname | Speicherung, Auswertung, Anzeige des Ergebnisses |
+| Kursserver (`sprechen.deutsch.quest`) | Tonaufnahme, Transkript, Ergebnis, Protokolldaten, Zugangsname | Speicherung, Auswertung, Anzeige des Ergebnisses |
 | Google (Gemini) | Ton des laufenden Gesprächs; danach die Tonaufnahme | Gespräch mit der Prüferin; neues Transkript und Bewertung der Aussprache |
 | Anthropic (Claude) | **ausschließlich Text** — Transkript und Prüfungsaufgaben | Erstellen der Aufgaben, sprachliche und inhaltliche Bewertung |
 
@@ -140,7 +140,7 @@ forwards data:
 
 | Recipient | What it receives | Purpose |
 |---|---|---|
-| Course server (`sprechen.deutsch.quest` for test accounts, `roxy.deutsch.quest`) | Voice recording, transcript, result, session logs, account name | Storage, evaluation, display of the result |
+| Course server (`sprechen.deutsch.quest`) | Voice recording, transcript, result, session logs, account name | Storage, evaluation, display of the result |
 | Google (Gemini) | Live audio of the conversation; afterwards the recording | Conversation with the examiner; new transcript and pronunciation assessment |
 | Anthropic (Claude) | **text only** — transcript and exam tasks | Generating tasks, linguistic and content evaluation |
 
