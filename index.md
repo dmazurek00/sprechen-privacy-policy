@@ -115,7 +115,7 @@ DTB B2 Sprechen is an Android app for practising the German B2 speaking exam. It
 exam conversation with an AI examiner and then evaluates the performance. It is distributed as a
 closed test to participants of a German course.
 
-**Data controller:** `Dawid Mazurek (Hüller Str. 26, 44866 Bochum, Germany)`
+**Data controller:** `Dawid Mazurek`
 **Contact:** `derdavid@deutsch.quest`
 
 ## What data is processed
