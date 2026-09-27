@@ -17,7 +17,7 @@ KI-Bewertung dient dem Üben.
 **Kontakt:** derdavid@deutsch.quest
 **Postanschrift:** im [Impressum von Sprechen](https://sprechen.deutsch.quest/zugang/?lang=de&legal=imprint)
 
-Für Anfragen über das Formular unter [sprechen.deutsch.quest/zugang](https://sprechen.deutsch.quest/zugang/)
+Für Anfragen über das Formular unter [deutsch.quest/sprechen](https://deutsch.quest/sprechen/)
 gelten die dort verlinkten Datenschutzhinweise.
 
 ## Welche Daten verarbeitet werden
@@ -167,7 +167,7 @@ evaluation is for practice.
 **Contact:** derdavid@deutsch.quest
 **Postal address:** see the [Sprechen imprint](https://sprechen.deutsch.quest/zugang/?lang=en&legal=imprint)
 
-Requests sent through the form at [sprechen.deutsch.quest/zugang](https://sprechen.deutsch.quest/zugang/)
+Requests sent through the form at [deutsch.quest/sprechen](https://deutsch.quest/sprechen)
 are covered by the privacy notice linked there.
 
 ## What data is processed
