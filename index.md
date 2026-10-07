@@ -1,6 +1,6 @@
 # Datenschutzerklärung – DTB B2 Sprechen
 
-**Stand:** 2026-09-27
+**Stand:** 2026-10-07
 
 ## Überblick
 
@@ -17,7 +17,7 @@ KI-Bewertung dient dem Üben.
 **Kontakt:** derdavid@deutsch.quest
 **Postanschrift:** im [Impressum von Sprechen](https://sprechen.deutsch.quest/zugang/?lang=de&legal=imprint)
 
-Für Anfragen über das Formular unter [deutsch.quest/sprechen](https://deutsch.quest/sprechen/)
+Für Anfragen über das Formular unter [sprechen.deutsch.quest/zugang](https://sprechen.deutsch.quest/zugang/)
 gelten die dort verlinkten Datenschutzhinweise.
 
 ## Welche Daten verarbeitet werden
@@ -28,6 +28,10 @@ gelten die dort verlinkten Datenschutzhinweise.
 - **Bewertungsergebnis** deiner Prüfung.
 - **Problemmeldungen**, die du selbst aus der Anwendung schickst („Problem mit diesem Gespräch melden"):
   der gewählte Grund, dein optionaler Text und die Nummer der Sitzung.
+- **Rückmeldung zur Testversion** (Umfrage in der Anwendung): deine Antworten, zugeordnet zu deinem
+  Benutzerkonto und gegebenenfalls der betreffenden Prüfung.
+- **Freiwillige Ausspracheübung** nach der Prüfung: eine kurze Aufnahme (10 bis 90 Sekunden), die du selbst mit
+  „Analysieren" über unseren Server an Google sendest; auf unserem Server wird sie nicht gespeichert.
 - **Technische Daten der Sitzung** zur Fehlersuche: Verbindungsqualität, Unterbrechungen, Typ und
   Version von Browser bzw. Gerät sowie die Version der Anwendung.
 - **Zugangsdaten zu deinem Profil**: Adresse des Profils, Benutzername (bei Testzugängen dein Vorname)
@@ -47,12 +51,19 @@ dieser setzt die Schlüssel ein und leitet weiter:
 | Google (Gemini) | Ton des laufenden Gesprächs; danach die Tonaufnahme | Gespräch mit der Prüferin; neues Transkript und Bewertung der Aussprache |
 | Anthropic (Claude) | **ausschließlich Text** — Transkript und Prüfungsaufgaben | Erstellen der Aufgaben, sprachliche und inhaltliche Bewertung |
 
-**An Anthropic gelangt kein Ton.** Eine Weitergabe an weitere Dritte findet nicht statt.
+**An Anthropic gelangt kein Ton.** Problemmeldungen aus der Anwendung gehen per E-Mail über Resend (Versand)
+und Porkbun (Weiterleitung) in das Gmail-Postfach des Betreibers (Google); auf dem Server von Sprechen werden
+sie nicht zusätzlich als Datei gespeichert. Die Antworten der Umfrage speichert nur der Server von Sprechen.
+Darüber hinaus findet keine Weitergabe an Dritte statt.
 
-**Übermittlung in die USA.** Google und Anthropic verarbeiten die Daten auch in den USA. Grundlage sind
-die Standardvertragsklauseln der EU-Kommission und, soweit der Anbieter zertifiziert ist, das EU-US
-Data Privacy Framework. Beide Anbieter verarbeiten die Daten im Auftrag nach ihren Bedingungen für die
-Programmierschnittstelle; danach werden die Inhalte nicht zum Training ihrer Modelle verwendet.
+Beim Gespräch (Google) und beim Erstellen der Aufgaben (Anthropic) leitet unser Server die Anfragen deines Browsers
+weiter; dabei können technische Angaben wie deine IP-Adresse und der Browsertyp mitgehen.
+
+**Übermittlung in die USA.** Google und Anthropic verarbeiten die Daten auch in den USA; für Problemmeldungen
+per E-Mail gilt dasselbe für Resend, Porkbun und Google (Gmail). Grundlage sind
+die Standardvertragsklauseln der EU-Kommission und, soweit der Anbieter zertifiziert ist, der
+Datenschutzrahmen EU-USA (EU-US Data Privacy Framework). Beide Anbieter verarbeiten die Daten im Auftrag nach ihren Bedingungen für die
+Programmierschnittstelle; danach werden die Inhalte nicht zum Training ihrer Sprachmodelle (Gemini, Claude) verwendet.
 Einzelheiten: [Datenschutzerklärung von Google](https://policies.google.com/privacy),
 [Nutzungsbedingungen der Gemini API](https://ai.google.dev/gemini-api/terms),
 [Datenschutzerklärung von Anthropic](https://www.anthropic.com/privacy).
@@ -73,16 +84,26 @@ Daten ist für die Bereitstellung des von dir angefragten Testzugangs erforderli
 (Art. 6 Abs. 1 lit. b DSGVO); die technischen Daten dienen außerdem unserem berechtigten Interesse an
 einem sicheren und funktionierenden Betrieb (Art. 6 Abs. 1 lit. f DSGVO).
 
+Transkripte, Ergebnisse und Rückmeldungen nutzt der Betreiber außerdem, um Sprechen zu verbessern (zum Beispiel
+beim Prüfen der Bewertungsregeln an gespeicherten Sitzungen); Tonaufnahmen hört er nur zur Fehlersuche an.
+Grundlage für die Verbesserung ist unser berechtigtes Interesse an einem funktionierenden Übungsangebot
+(Art. 6 Abs. 1 lit. f DSGVO); du kannst dieser Nutzung jederzeit widersprechen (siehe „Deine Rechte").
+
 ## Speicherdauer
 
 - **Ton auf dem Server:** wird **7 Tage nach abgeschlossener Auswertung gelöscht**. Konnte eine
   Auswertung nicht abgeschlossen werden, wird die Aufnahme nicht automatisch gelöscht; der Betreiber
   entfernt sie bei der Bereinigung des Profils, spätestens auf deine Anfrage hin.
-- **Ton bei Google:** Die für die Auswertung hochgeladene Aufnahme löscht Google spätestens 48 Stunden
-  nach dem Hochladen automatisch. Für die weitere Verarbeitung bei Google und Anthropic gelten deren
-  eigene Fristen.
+- **Bei Google und Anthropic:** Die für die Auswertung hochgeladene Aufnahme löscht der Server von Sprechen
+  bei Google direkt nach der Verarbeitung; spätestens löscht Google sie 48 Stunden nach dem Hochladen
+  automatisch. Darüber hinaus speichert Google Anfragen und Antworten bis zu 55 Tage, um Missbrauch zu
+  erkennen (Einsicht nur durch dazu befugte Google-Mitarbeitende); Anthropic löscht Eingaben und Ausgaben in der Regel innerhalb von 30 Tagen (länger nur bei
+  Verdacht auf einen Verstoß gegen seine Nutzungsbedingungen).
 - **Ergebnis und Transkripte:** bleiben in deinem Profil, bis du ihre Löschung verlangst. Auf deine
   Anfrage löscht der Betreiber alle Sitzungen, Tonaufnahmen und Ergebnisse deines Zugangs.
+- **Problemmeldungen:** löscht der Betreiber nach der Bearbeitung und dem Ende der Korrespondenz aus seinem
+  Postfach.
+- **Rückmeldungen (Umfrage):** bleiben auf dem Server, bis du ihre Löschung verlangst.
 - **Zugangsname:** Bei Testzugängen ist der Benutzername dein Vorname. Er bleibt in der Kontoverwaltung
   des Servers auch nach dem Schließen des Zugangs vermerkt und kann in Sicherungskopien der
   Kontoverwaltung sowie in automatisch rotierenden Server-Protokollen (ohne Gesprächsinhalte) enthalten
@@ -97,8 +118,9 @@ einem sicheren und funktionierenden Betrieb (Art. 6 Abs. 1 lit. f DSGVO).
   du kannst sie in den Einstellungen des Browsers löschen.
 - Im Speicher des Browsers liegen eine Kopie des laufenden Gesprächs und Kopien noch nicht übertragener
   Gespräche. Die Kopie eines Gesprächs wird entfernt, sobald das Ergebnis auf dem Server gesichert ist.
-- Die letzten zwei Tonaufnahmen bleiben in der Datenbank des Browsers; du kannst sie im „Archiv"
-  jederzeit löschen. Wählst du nur die lokale Sicherheitskopie, werden diese Aufnahmen nicht hochgeladen.
+- Tonaufnahmen bleiben in der Datenbank des Browsers (ohne Auswertung nur die letzten zwei; eine Aufnahme mit
+  Auswertung bleibt, bis du sie löschst); du kannst sie unter „Verlauf" jederzeit löschen. Wählst du nur die
+  lokale Sicherheitskopie, werden diese Aufnahmen nicht hochgeladen.
 - Benachrichtigungen des Browsers (etwa wenn das Ergebnis fertig ist) gibt es nur, wenn du sie erlaubst.
 - Das Löschen der Website-Daten von `sprechen.deutsch.quest` im Browser entfernt alle lokal
   gespeicherten Daten.
@@ -124,15 +146,16 @@ einem sicheren und funktionierenden Betrieb (Art. 6 Abs. 1 lit. f DSGVO).
 
 - Alle Verbindungen laufen verschlüsselt (HTTPS bzw. WSS).
 - Der Server wird bei Exoscale in Sofia (EU) betrieben; auf die gespeicherten Daten greift nur der
-  Betreiber zu.
+  Betreiber zu. Zur Fehlersuche kann er auch Aufnahmen anhören.
 
 ## Deine Rechte
 
 Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und
 Datenübertragbarkeit sowie auf Widerruf deiner Einwilligung mit Wirkung für die Zukunft. Gegen eine
 Verarbeitung auf Grundlage berechtigter Interessen kannst du aus Gründen deiner besonderen Situation
-Widerspruch einlegen. Für Auskunft, Löschung oder Widerspruch genügt eine Nachricht an die oben
-genannte Kontaktadresse.
+Widerspruch einlegen. Der Nutzung deiner Transkripte, Ergebnisse und Rückmeldungen zur Verbesserung von
+Sprechen kannst du jederzeit ohne Angabe von Gründen widersprechen; wir nutzen sie dann nicht mehr dafür. Für
+Auskunft, Löschung oder Widerspruch genügt eine Nachricht an die oben genannte Kontaktadresse.
 
 Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren, insbesondere bei der
 [Landesbeauftragten für Datenschutz und Informationsfreiheit Nordrhein-Westfalen](https://www.ldi.nrw.de/beschwerde).
@@ -150,7 +173,7 @@ für Kinder unter 13 Jahren bestimmt.
 
 # Privacy Policy – DTB B2 Sprechen (English)
 
-**Last updated:** 2026-09-27
+**Last updated:** 2026-10-07
 
 ## Overview
 
@@ -167,7 +190,7 @@ evaluation is for practice.
 **Contact:** derdavid@deutsch.quest
 **Postal address:** see the [Sprechen imprint](https://sprechen.deutsch.quest/zugang/?lang=en&legal=imprint)
 
-Requests sent through the form at [deutsch.quest/sprechen](https://deutsch.quest/sprechen)
+Requests sent through the form at [sprechen.deutsch.quest/zugang](https://sprechen.deutsch.quest/zugang/)
 are covered by the privacy notice linked there.
 
 ## What data is processed
@@ -178,6 +201,10 @@ are covered by the privacy notice linked there.
 - **Evaluation result.**
 - **Problem reports** you send yourself from the application ("Problem mit diesem Gespräch melden"):
   the chosen reason, your optional text and the session number.
+- **Feedback on the test version** (survey in the application): your answers, linked to your account and,
+  where applicable, to the exam concerned.
+- **Optional pronunciation practice** after the exam: a short recording (10 to 90 seconds) that you send to
+  Google yourself via our server with "Analysieren"; it is not stored on our server.
 - **Technical session data** for troubleshooting: connection quality, interruptions, type and version
   of your browser or device, and the application version.
 - **Profile credentials**: profile address, username (for test accounts, your first name) and password.
@@ -195,12 +222,19 @@ forwards data:
 | Google (Gemini) | Live audio of the conversation; afterwards the recording | Conversation with the examiner; new transcript and pronunciation assessment |
 | Anthropic (Claude) | **text only** — transcript and exam tasks | Generating tasks, linguistic and content evaluation |
 
-**No audio is sent to Anthropic.** No data is shared with any other third party.
+**No audio is sent to Anthropic.** Problem reports from the application travel by e-mail via Resend (sending)
+and Porkbun (forwarding) to the operator's Gmail mailbox (Google); they are not additionally stored as a file
+on the Sprechen server. Survey answers are stored only on the Sprechen server. Beyond this, no data is shared
+with third parties.
 
-**Transfers to the USA.** Google and Anthropic also process the data in the USA. The transfers rely on
+During the conversation (Google) and when the tasks are generated (Anthropic) our server forwards your browser's
+requests; technical details such as your IP address and browser type may be passed along.
+
+**Transfers to the USA.** Google and Anthropic also process the data in the USA; the same applies to Resend,
+Porkbun and Google (Gmail) for problem reports sent by e-mail. The transfers rely on
 the EU Commission standard contractual clauses and, where the provider is certified, on the EU-US Data
 Privacy Framework. Both providers process the data on our behalf under their API terms; under those
-terms the content is not used to train their models. Details:
+terms the content is not used to train their language models (Gemini, Claude). Details:
 [Google privacy policy](https://policies.google.com/privacy),
 [Gemini API terms](https://ai.google.dev/gemini-api/terms),
 [Anthropic privacy policy](https://www.anthropic.com/privacy).
@@ -219,16 +253,26 @@ Processing of your credentials, the result, your problem reports and the technic
 provide the test access you requested (Art. 6(1)(b) GDPR); the technical data also serves our
 legitimate interest in secure and reliable operation (Art. 6(1)(f) GDPR).
 
+The operator also uses transcripts, results and feedback to improve Sprechen (for example when checking the
+evaluation rules against stored sessions); voice recordings are listened to only for troubleshooting. The
+improvement is based on our legitimate interest in a working practice service (Art. 6(1)(f) GDPR); you may
+object to this use at any time (see "Your rights").
+
 ## Retention
 
 - **Audio on the server:** deleted **7 days after the analysis has been completed**. If an analysis
   could not be completed, the recording is not deleted automatically; the operator removes it when
   cleaning up the profile, and at the latest upon your request.
-- **Audio at Google:** the recording uploaded for evaluation is deleted by Google automatically no later
-  than 48 hours after upload. Further processing at Google and Anthropic follows their own retention
-  periods.
+- **At Google and Anthropic:** the Sprechen server deletes the recording uploaded for evaluation at Google
+  right after processing; at the latest, Google deletes it automatically 48 hours after upload. Beyond that,
+  Google keeps prompts and responses for up to 55 days to detect abuse (they can be accessed for review only by
+  authorised Google staff); Anthropic deletes inputs and outputs
+  normally within 30 days (longer only where it suspects a violation of its usage policy).
 - **Result and transcripts:** kept in your profile until you request deletion. Upon your request the
   operator deletes all sessions, voice recordings and results of your account.
+- **Problem reports:** the operator deletes them from the mailbox after handling the report and ending the
+  correspondence.
+- **Feedback (survey):** kept on the server until you request deletion.
 - **Account name:** for test accounts the username is your first name. It remains recorded in the
   server's account management after the account is closed and may be contained in backup copies of the
   account management and in automatically rotating server logs (without conversation content); upon
@@ -243,8 +287,9 @@ legitimate interest in secure and reliable operation (Art. 6(1)(f) GDPR).
   can delete them in the browser settings.
 - The browser storage holds a copy of the current conversation and copies of conversations not yet
   transferred. A conversation copy is removed as soon as the result is stored on the server.
-- The last two voice recordings remain in the browser database; you can delete them at any time under
-  "Archiv". If you choose the local-only backup copy, these recordings are not uploaded.
+- Voice recordings remain in the browser database (without evaluation only the last two; a recording with
+  evaluation stays until you delete it); you can delete them at any time under "Verlauf". If you choose the
+  local-only backup copy, these recordings are not uploaded.
 - Browser notifications (for example when the result is ready) appear only if you allow them.
 - Clearing the site data of `sprechen.deutsch.quest` in your browser removes all locally stored data.
 
@@ -267,14 +312,16 @@ legitimate interest in secure and reliable operation (Art. 6(1)(f) GDPR).
 ## Security
 
 - All connections are encrypted (HTTPS / WSS).
-- The server is hosted by Exoscale in Sofia (EU); only the operator has access to the stored data.
+- The server is hosted by Exoscale in Sofia (EU); only the operator has access to the stored data. For
+  troubleshooting the operator may also listen to recordings.
 
 ## Your rights
 
 You have the right of access, rectification, erasure, restriction of processing and data portability,
 and the right to withdraw your consent with effect for the future. You may object, on grounds relating
-to your particular situation, to processing based on legitimate interests. A message to the contact
-address above is enough for access, erasure or objection.
+to your particular situation, to processing based on legitimate interests. You may object at any time, without
+giving reasons, to the use of your transcripts, results and feedback for improving Sprechen; we will then stop
+using them for that purpose. A message to the contact address above is enough for access, erasure or objection.
 
 You may also lodge a complaint with a data protection supervisory authority, in particular the
 [State Commissioner for Data Protection and Freedom of Information of North Rhine-Westphalia](https://www.ldi.nrw.de/beschwerde).
@@ -287,4 +334,5 @@ children under 13.
 ## Changes
 
 Changes to this policy will be published on this page with an updated date.
+
 
